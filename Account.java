@@ -1,4 +1,3 @@
-package muisbh3;
 
 // Import tools for money, rounding, date/time, text formatting, and lists
 import java.math.BigDecimal;
@@ -11,17 +10,20 @@ import java.util.List;
 import java.util.Locale;
 
 /**
- * Namn: Muiugeta Abrham Sbhat
- * LTU-id: muisbh-3
+ * Abstract base class for bank accounts.
+ *
+ * This class defines common properties and behavior shared by all account types,
+ * including account ID, balance handling, transaction history, and money formatting.
+ *
+ * Features:
+ * - Stores account ID and current balance
+ * - Handles deposits
+ * - Saves transaction history
+ * - Formats amounts and percentages
+ * - Provides abstract methods for account-specific behavior
  */
 public abstract class Account {
 
-    // SUMMARY:
-    // This class is the parent class for all account types.
-    // It stores things that every account has:
-    // account number, balance, and transaction history.
-    // It also handles deposit, saving transactions,
-    // and formatting money and percent values.
 
     // Unique number for the account
     private final int accountId;
