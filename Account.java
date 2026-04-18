@@ -1,14 +1,3 @@
-package xxxxxxx;
-// Import tools for money, rounding, date/time, text formatting, and lists
-import java.math.BigDecimal;
-import java.math.RoundingMode;
-import java.text.NumberFormat;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Locale;
-
 /**
  * Abstract base class for bank accounts.
  *
@@ -22,6 +11,18 @@ import java.util.Locale;
  * - Formats amounts and percentages
  * - Provides abstract methods for account-specific behavior
  */
+package xxxxxxx;
+// Import tools for money, rounding, date/time, text formatting, and lists
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+import java.text.NumberFormat;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Locale;
+
+
 public abstract class Account {
 
 
