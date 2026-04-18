@@ -1,13 +1,3 @@
-package xxxxxxx;
-
-// Import Swing tools for GUI windows, buttons, labels, lists, and dialogs
-import javax.swing.*;
-import javax.swing.border.EmptyBorder;
-import java.awt.*;
-import java.util.List;
-
-public class AccountPanel extends JPanel {
-
  /**
  * GUI panel for managing a selected customer's bank accounts.
  *
@@ -20,6 +10,16 @@ public class AccountPanel extends JPanel {
  *
  * It communicates with the BankLogic layer and updates the main BankGUI interface.
  */
+package xxxxxxx;
+
+// Import Swing tools for GUI windows, buttons, labels, lists, and dialogs
+import javax.swing.*;
+import javax.swing.border.EmptyBorder;
+import java.awt.*;
+import java.util.List;
+
+public class AccountPanel extends JPanel {
+
 
     // Reference to the main GUI window
     private final BankGUI gui;
