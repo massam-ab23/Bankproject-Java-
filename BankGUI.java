@@ -38,7 +38,7 @@ public class BankGUI extends JFrame {
     public BankGUI(BankLogic bankLogic) {
         this.bankLogic = bankLogic; // Save bank logic reference
 
-        setTitle("Bankapplikation - Muiugeta Abrham Sbhat"); // Window title
+        setTitle("Java Bank Application"); // Window title
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Close program when window closes
         setSize(1000, 650); // Set window size
         setLocationRelativeTo(null); // Put window in center of screen
