@@ -161,7 +161,7 @@ public class CustomerPanel extends JPanel {
         boolean created = bankLogic.createCustomer(firstName, lastName, pNo);
         if (created) {
             JOptionPane.showMessageDialog(this, "Kunden skapades.");
-            gui.setStatus("Ny kund skapad: " + pNo);
+            gui.setStatus("Ny kund skapad");
             clearFields(); // Clear fields after success
             refreshCustomerList(); // Update list
         } else {
@@ -184,7 +184,7 @@ public class CustomerPanel extends JPanel {
         boolean changed = bankLogic.changeCustomerName(firstName, lastName, pNo);
         if (changed) {
             JOptionPane.showMessageDialog(this, "Kundens namn uppdaterades.");
-            gui.setStatus("Kund uppdaterad: " + pNo);
+            gui.setStatus("Kund uppdaterad");
             refreshCustomerList(); // Refresh list after change
         } else {
             JOptionPane.showMessageDialog(this, "Ingen ändring kunde göras.");
@@ -215,7 +215,7 @@ public class CustomerPanel extends JPanel {
         if (deletedInfo != null) {
             JOptionPane.showMessageDialog(this,
                     "Kund borttagen:\n" + String.join("\n", deletedInfo));
-            gui.setStatus("Kund borttagen: " + pNo);
+            gui.setStatus("Kund borttagen");
             clearFields(); // Clear fields after deletion
             refreshCustomerList(); // Update list
         } else {
@@ -248,7 +248,7 @@ public class CustomerPanel extends JPanel {
                     "Kundinformation",
                     JOptionPane.INFORMATION_MESSAGE);
 
-            gui.setStatus("Visade kundinformation för: " + pNo);
+            gui.setStatus("Visade kundinformation");
         } else {
             JOptionPane.showMessageDialog(this, "Ingen kundinformation kunde hämtas.");
         }
